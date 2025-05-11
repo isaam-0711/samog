@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recipe search-engine</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+
+<body>
+    <nav class="bg-red-500 justify-center text-center text-white p-2">
+        <h1 class="text-2xl">Recipe Finder</h1>
+    </nav>
+
+    <header class="bg-grey-500 flex justify-center items-center bg-gray-200 h-[25rem]">
+        <div class="flex flex-col gap-6 text-center">
+            <h1 class="text-4xl">Find your Recipe</h1>
+            <input id="search-bar" type="text" placeholder="Search recipe">
+            <button id="search-button" class="bg-red-500 rounded 25px hover:bg-blue-500 px-4 py-2">Let us cook</button>
+        </div>
+    </header>
+
+    <main class="m-12">
+        <div id="recipe-area">
+            <h1 class="text-2xl text-center" id="no-search-text">You have not searched the recipe!</h1>
+        </div>
+        <br>
+
+        <div id="recipe-area">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <h3 class="font-bold text-xl">
+                </h3>
+                <img id="recipe-image" class="w-full h-[20rem] object-cover">
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <h1 id="recipe-name" class="text-2xl">Meal</h1>
+                <p>
+                    <b>Category</b>: <span id="recipe-category"></span>
+                </p>
+
+                <p id="recipe-instructions"></p>
+          </div>
+        </div>
+
+        <div class="text-black text-xl flex justify-center gap-2 text-center mt-10 p-10 bg-gray-200 border-black border-2 rounded-lg">
+            <p>
+                Subscribe to our newsletter 👉 
+                        <input type="text" placeholder="Your email">
+            </p>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="flex justify-center text-center bg-red-500 p-2">
+            <button class=" p-2 m-2 hover:bg-blue-500">
+                 Contact us here
+            </button>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
